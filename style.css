@@ -1,0 +1,525 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background: url(images/bg-header-desktop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    position: relative;
+}
+
+.header::after {
+    content: "";
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-image: url(images/logo.svg);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: 98%;
+    transform: translate(-50%, -30%);
+    background-position: center;
+    width: 13%;
+}
+
+section {
+    margin: 0 auto;
+    max-width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 8rem;
+    align-items: center;
+    color: hsl(201, 11%, 66%);
+}
+
+section * {
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+
+.top-logo-container {
+    border: 1px solid black;
+}
+
+h1, h2, h3 {
+    color: hsl(210, 10%, 33%);
+}
+
+h1 {
+    font-size: xxx-large;
+}
+
+h2 {
+    font-size: xx-large;
+}
+
+h3 {
+    font-size: x-large;
+}
+
+.first {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 3rem;
+}
+
+.first p {
+    max-width: 69%;
+    margin: 0 auto;
+}
+
+.second {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    width: 100%;
+    gap: 4rem;
+}
+
+.snippets p {
+    max-width: 57%;
+    margin: 0 auto;
+}
+
+.TV {
+    display: flex;
+}
+
+.TV img {
+    height: auto;
+    width: 50rem;
+    margin-left: -17rem;
+}
+
+.TVs-side {
+    gap: 3rem;
+    display: flex;
+    flex-direction: column;
+    padding-left: 7rem;
+    justify-content: center;
+    text-align: start;
+}
+
+.TV-texts p {
+    max-width: 70%;
+}
+
+.third {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    gap: 4rem;
+}
+
+.third p {
+    max-width: 58%;
+    margin: 0 auto;
+}
+
+.fourth {
+    display: flex;
+    flex-direction: column;
+    text-align: center;    
+    gap: 4rem;
+}
+
+.Images {
+    display: flex;    
+    align-items: center;
+    gap: 2rem;
+    width: 70rem;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    gap: 2rem;
+}
+
+.box img {
+    height: 3rem;
+    width: 3rem;
+}
+
+.box img:hover {
+    height: 4rem;
+    width: 4rem;
+    cursor: pointer;
+}
+
+.box img:active {
+    height: 3.5rem;
+    width: 3.5rem;
+}
+
+.fifth {
+    display: flex;
+    justify-content: space-between;
+    gap: 7rem;
+}
+
+.fifth img {
+    width: 9rem;
+    height: 2.5rem;  
+}
+
+.sixth {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 3rem;
+}
+
+.sixth p {
+    max-width: 67%;
+    margin: 0 auto;
+}
+
+footer {
+    display: flex;    
+    align-items: center;
+    background-color: hsl(0deg 0% 90%);
+    justify-content: space-evenly;
+    height: 7rem;
+}
+
+.help {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.one p:last-child:hover {
+    cursor: pointer;
+    color: hsl(171, 66%, 44%);
+}
+
+.socials {
+    display: flex;
+    gap: 2rem;
+}
+
+.socials img {
+    height: 2rem;
+    width: 2rem;
+}
+
+.socials img:nth-child(2):hover {
+    cursor: pointer;
+    background-color: hsl(171, 66%, 44%);
+}
+
+button:first-child {
+    background-color: hsl(171, 66%, 44%);
+    box-shadow: -3px 12px 15px -5px rgb(17 110 32 / 45%);
+}
+
+button:first-child:hover {
+    background-color: hsl(171, 89%, 44%);
+
+}
+
+button:last-child {
+    background-color: hsl(233, 100%, 69%);
+}
+
+button:last-child:hover {
+    background-color: hsl(233, 77%, 71%);
+}
+
+button {
+    height: 3rem;
+    border-radius: 2rem;
+    width: 13rem;
+    color: white;
+    border: none;
+    font-size: large;
+}
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+@media screen and (max-width:1050px) {
+
+    .snippets p {
+        max-width: 65%;
+    }
+
+    .TV img {
+        /* height: 33rem; */
+        width: 44rem;
+    }
+
+    .TVs-side {
+        padding-left: 5rem;
+        gap: 2rem;
+    }
+
+    .TV-texts p {
+        max-width: 80%;
+    }
+
+    .fifth {
+        gap: 6rem;
+    }
+
+    .Images {
+        width: 65rem;
+    }
+    
+}
+
+@media screen and (max-width:990px) {
+    .TVs-side {
+        padding-left: 4rem;
+    }
+
+    .fifth {
+        gap: 5rem;
+    }
+
+    .Images {
+        width: 60rem;
+    }
+}
+
+@media screen and (max-width: 940px) {
+    .TV img {
+        /* height: 30rem; */
+        width: 40rem;
+    }
+
+    .Images {
+        align-items: flex-start;
+        width: 55rem;
+    }
+    
+    .fifth {
+        gap: 4rem;
+    }
+
+}
+
+@media screen and (max-width: 880px) {
+    .fifth img {
+        width: 8rem;
+        height: 2rem;
+    }
+
+    .box img {
+        height: 2.5rem;
+        width: 2.5rem;
+    }
+    .box img:hover {
+        height: 3.5rem;
+        width: 3.5rem;
+    }
+    .box img:active {
+        height: 3rem;
+        width: 3rem;
+    }
+    .TVs-side {
+        justify-content: start;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .Images {
+        width: 50rem;
+    }
+
+    .fifth {
+        gap: 3rem;
+    }
+
+    h3 {
+        font-size: large;
+    }
+
+    h2 {
+        font-size: x-large;
+    }
+    h1 {
+        font-size: xx-large;
+    }
+    p {
+        font-size: small;
+    }
+
+    .box {
+        gap: 1rem;
+    }
+
+    .box img:hover {
+        height: 3rem;
+        width: 3rem;
+    }
+    .box img:active {
+        height: 2.7rem;
+        width: 2.7rem;
+    }
+
+    .help {
+        gap: 1rem;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .TV img {
+        /* height: 25rem; */
+        width: 35rem;
+    }
+
+    .Images {
+        width: 45rem;
+    }
+
+    .box img {
+        height: 2rem;
+        width: 2rem;
+    }
+
+    .box img:hover {
+        height: 2.5rem;
+        width: 2.5rem;
+    }
+    .box img:active {
+        height: 2.3rem;
+        width: 2.3rem;
+    }
+
+    .fifth {
+        gap: 2rem;
+        width: 45rem;
+    }
+
+    .help {
+        gap: 0.5rem;
+    }
+
+
+}
+
+@media screen and (max-width: 650px) {
+    
+
+    section {
+        display: flex;
+        width: 30rem;
+    }
+
+    .header {
+        background: url(images/bg-header-mobile.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 16rem;
+    }
+
+    .first {
+        display: flex;
+    }
+
+    .TV {
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+    }
+
+    .TV img {
+        /* height: auto; */
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .TV-texts p {
+        max-width: 100%;
+    }
+
+    .TVs-side {
+        text-align: center;
+        padding-left: 0;
+    }
+
+    .Images {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .box {
+        gap: 2.5rem;
+    }
+
+    .box img {
+        height: 3rem;
+        width: 4rem;
+    }
+
+    .box img:active {
+        height: 2.7rem;
+        width: 2.7rem;    
+    }
+
+    .fifth {
+        gap: 4rem;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .fifth img {
+        width: 12rem;
+        height: 4rem;
+    }
+
+    footer {
+        flex-direction: column;
+        height: 40rem;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    .help {
+        gap: 3rem;
+    }
+
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: xxx-large;
+    }
+
+    h2 {
+        font-size: xx-large;
+    }
+
+    h3 {
+        font-size: x-large;
+    }
+
+    p {
+        font-size: large;
+    }
+}
