@@ -207,14 +207,40 @@ footer {
     gap: 2rem;
 }
 
-.socials img {
+.face {
+    background-image: url(/images/icon-facebook.svg);
+}
+
+.tweet {
+    background-image: url(/images/icon-twitter.svg);
+}
+
+.insta {
+    background-image: url(/images/icon-instagram.svg);
+}
+
+.socials .img {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
     height: 2rem;
     width: 2rem;
 }
 
-.socials img:nth-child(2):hover {
+.face:hover {
+    background-image: url(/images/facebook.png);
+}
+
+.tweet:hover {
+    background-image: url(/images/twitter.png);
+}
+
+.insta:hover {
+    background-image: url(/images/instagram.png);
+}
+
+.socials .img:hover {
     cursor: pointer;
-    background-color: hsl(171, 66%, 44%);
 }
 
 button:first-child {
@@ -380,7 +406,6 @@ button:hover {
 
 @media screen and (max-width: 750px) {
     .TV img {
-        /* height: 25rem; */
         width: 35rem;
     }
 
@@ -441,7 +466,6 @@ button:hover {
     }
 
     .TV img {
-        /* height: auto; */
         width: 100%;
         margin-left: 0;
     }
